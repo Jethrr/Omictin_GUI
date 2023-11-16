@@ -64,7 +64,7 @@ public class FOS extends JFrame {
 
 
 
-                JOptionPane.showMessageDialog(FOS.this,"The total price is Php " + finalPrice);
+                JOptionPane.showMessageDialog(FOS.this,"The total price is Php " + String.format("%.2f",finalPrice));
 
             }
 
@@ -79,7 +79,7 @@ public class FOS extends JFrame {
         JButton btn = new JButton("HIEFS");
         app.setSize(1000, 600);
         app.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        app.setTitle("Simple Calculator");
+        app.setTitle("Food Ordering System");
         app.setVisible(true);
     }
 }
